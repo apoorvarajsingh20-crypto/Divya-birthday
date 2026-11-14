@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday in Advance, Divya! ♡</title>
+<style>
+:root{--pink:#ffdce9;--pink2:#f5a9c8;--blue:#dff2ff;--blue2:#9fd3f5;--ink:#76566d}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;font-family:"Trebuchet MS",system-ui,sans-serif;color:var(--ink);background:linear-gradient(135deg,#fff0f6,#eaf6ff 55%,#ffeaf3);overflow-x:hidden}
+main{width:min(900px,92%);margin:auto;padding:30px 0 55px;position:relative;z-index:2}
+.hero,.panel{background:rgba(255,255,255,.8);border:2px solid #fff;border-radius:28px;box-shadow:0 14px 40px rgba(177,143,180,.15);backdrop-filter:blur(8px)}
+.hero{text-align:center;padding:46px 22px 36px;overflow:hidden}
+.eyebrow{letter-spacing:3px;text-transform:uppercase;font-size:.75rem;color:#a77eaa}
+h1{font-family:Georgia,serif;font-size:clamp(2.5rem,8vw,5rem);line-height:1.04;margin:14px 0;color:#d77fa8;font-weight:600}
+.subtitle{font-size:1.08rem;line-height:1.7;max-width:590px;margin:0 auto}
+.nicknames{margin:19px auto 0;color:#719bc0;font-weight:700;line-height:1.8}
+.pill{display:inline-block;margin-top:22px;background:#e7f4ff;color:#638db3;border-radius:99px;padding:10px 17px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:20px}
+.panel{padding:24px}
+.panel h2{font-family:Georgia,serif;color:#cf7da5;font-size:1.65rem;margin:0 0 12px}
+.panel p{line-height:1.8;margin:0}
+.full{grid-column:1/-1;text-align:center}
+.catbox{display:flex;justify-content:center;gap:18px;margin:15px 0 2px;font-size:3rem}
+.catbox span{animation:bob 2.4s ease-in-out infinite}
+.catbox span:nth-child(2){animation-delay:.4s}.catbox span:nth-child(3){animation-delay:.8s}
+button{border:0;border-radius:999px;padding:13px 21px;background:linear-gradient(100deg,#f5a9c8,#9fd3f5);color:#fff;font-size:1rem;font-weight:700;cursor:pointer;box-shadow:0 7px 18px #dcb9d5;margin-top:16px}
+button:hover{transform:translateY(-2px)}
+.letter{display:none;margin-top:16px;background:#fff5fa;border:1px dashed #e9a9c7;border-radius:18px;padding:20px;text-align:left;line-height:1.9}
+.letter.show{display:block;animation:fade .5s ease}
+.flowers{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:1}
+.flower{position:absolute;top:-50px;opacity:.65;animation:fall linear infinite}
+footer{text-align:center;padding:25px 10px;color:#9a7c9a;font-size:.9rem}
+@keyframes fall{to{transform:translateY(110vh) rotate(360deg)}}
+@keyframes bob{50%{transform:translateY(-9px) rotate(4deg)}}
+@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:650px){.grid{grid-template-columns:1fr}.full{grid-column:auto}.hero{padding:38px 18px}}
+</style>
+</head>
+<body>
+<div class="flowers" aria-hidden="true" id="flowers"></div>
+<main>
+<section class="hero">
+<div class="eyebrow">a tiny surprise made with care ♡</div>
+<h1>Happy Birthday<br>in Advance, Divya!</h1>
+<p class="subtitle">Your special day is almost here, so I couldn't wait to celebrate you. Here's a little pink-and-blue corner of the internet, made just for you! 🌷</p>
+<div class="nicknames">For my Meri Laddu 🍡 · my Divuuu 💗 · my Sona Putri 🩵</div>
+<div class="pill">18 November · Your day is almost here! 🎂</div>
+<div class="catbox" aria-label="Cute cats"><span>🐱</span><span>🐈</span><span>🐱</span></div>
+</section>
+
+<section class="grid">
+<article class="panel">
+<h2>A little wish for you 🌸</h2>
+<p>May your days be filled with the prettiest little moments, endless laughter, warm hugs, exciting surprises and all the happiness your heart can hold. You deserve so much care, today and always.</p>
+</article>
+<article class="panel">
+<h2>Reasons you're special 🩵</h2>
+<p>Your smile, your silly little ways, the memories we make and simply the person you are. Life is sweeter with you in it, Divuuu. Never forget how loved and appreciated you are!</p>
+</article>
+<article class="panel full">
+<h2>Open when you're ready for a little care 💌</h2>
+<p>There's a tiny letter waiting just for you.</p>
+<button type="button" id="openLetter">Open your letter ♡</button>
+<div class="letter" id="letter">
+My dearest Divya,<br><br>
+Happiest birthday in advance, meri Laddu! I know your birthday is on 18th November, but why should I wait to celebrate someone as special as you? I hope this new year of your life brings you beautiful memories, big smiles, kind people and dreams coming true.<br><br>
+Thank you for being you. Keep shining, keep laughing and keep being my favourite Sona Putri. Sending you the biggest bundle of care, today and on your special day! 💗🩵<br><br>
+With lots and lots of care,<br>
+Your person ♡
+</div>
+</article>
+<article class="panel full">
+<h2>One last thing… 🎀</h2>
+<p>This website is small, but the care behind it is HUGE. Consider this your early birthday hug, wrapped in flowers, baby blue skies and tiny cats.</p>
+<div style="font-size:2rem;margin-top:12px">🌷 🩷 🐾 🩵 🌷</div>
+</article>
+</section>
+<footer>Made especially for Divya · 18.11 ♡</footer>
+</main>
+<script>
+const symbols=["🌸","🌷","🩵","💗","✿","❀"];
+const layer=document.getElementById("flowers");
+for(let i=0;i<24;i++){
+ const f=document.createElement("span"); f.className="flower";
+ f.textContent=symbols[i%symbols.length];
+ f.style.left=(Math.random()*100)+"%";
+ f.style.animationDuration=(9+Math.random()*12)+"s";
+ f.style.animationDelay=(-Math.random()*18)+"s";
+ f.style.fontSize=(16+Math.random()*17)+"px";
+ layer.appendChild(f);
+}
+document.getElementById("openLetter").addEventListener("click",()=>{
+ const letter=document.getElementById("letter");
+ letter.classList.toggle("show");
+ document.getElementById("openLetter").textContent=letter.classList.contains("show")?"Close letter ♡":"Open your letter ♡";
+});
+</script>
+</body>
+</html>
